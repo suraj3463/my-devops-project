@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuotaAI — AI-Powered Quote Maker</title>
+  <meta name="description" content="Create beautiful, inspiring quotes with AI. Generate, customize, and share stunning quote images in seconds.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">✦</div>
+        <span class="logo-text">Quota<span class="text-gold-gradient">AI</span></span>
+      </a>
+      <nav><a href="#" class="nav-link active">Create</a></nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="badge">⚡ AI-Powered Quote Generation</div>
+      <h1>Craft Quotes That<br><span class="text-gold-gradient">Inspire the World</span></h1>
+      <p class="hero-desc">Generate beautiful, thought-provoking quotes with AI. Perfect for social media, presentations, or daily inspiration.</p>
+    </div>
+  </section>
+
+  <!-- Generator -->
+  <section class="generator">
+    <div class="generator-inner">
+      <label class="label">Topic or Keyword</label>
+      <input type="text" id="topicInput" class="input-dark" placeholder="e.g., overcoming fear, morning motivation, gratitude...">
+
+      <label class="label" style="margin-top:24px;">Theme</label>
+      <div class="themes" id="themes"></div>
+
+      <button class="btn-gold" id="generateBtn" onclick="generateQuote()">
+        <span id="btnText">✦ Generate Quote</span>
+      </button>
+
+      <!-- Quote Card -->
+      <div id="quoteCard" class="quote-card" style="display:none;">
+        <span class="quote-mark">"</span>
+        <blockquote id="quoteText"></blockquote>
+        <p class="quote-author" id="quoteAuthor"></p>
+        <span class="quote-theme" id="quoteTheme"></span>
+        <div class="actions">
+          <button onclick="copyQuote()">📋 Copy</button>
+          <button onclick="downloadQuote()">⬇ Image</button>
+          <button onclick="shareQuote()">🔗 Share</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">✦</div>
+        <h3>AI-Powered</h3>
+        <p>Intelligent quote generation tailored to your mood and topic</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Beautiful Design</h3>
+        <p>Stunning visuals ready for social media sharing</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔗</div>
+        <h3>Instant Share</h3>
+        <p>Copy, download, or share your quotes anywhere</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with <span class="text-gold">♦</span> by QuotaAI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
